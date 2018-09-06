@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Page</title>
+<style>
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.row{
+    width: 100%;
+    height: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.col-4{
+    background-color: burlywood;
+    width: 30%;
+    height:inherit;
+    float:left;
+    margin-right: 10px;
+    padding: 7.8%;
+    font-size: 28px;
+}
+.col-4:hover{
+    background-color: rgb(223, 164, 143);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+iframe{
+    border: none;
+    width:100%;
+    height:80%;
+}
+
+</style>
+</head>
+<body>
+<section>
+	<div class="row">
+        <div class="col-4" id="firstdiv">
+            <a href="addteacher.html" target="bellow">Add Teacher</a>
+        </div>
+        <div class="col-4" >
+                <a href="addstu.html" target="bellow">Add Student</a>
+        </div>
+        <div class="col-4">
+                <a href="" target="bellow">Add Subject</a>
+        </div>
+        <iframe src="addstu.html" name="bellow"></iframe>
+	</div>
+</section>
+</body>
+</html>
