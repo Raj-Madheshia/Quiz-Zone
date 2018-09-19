@@ -21,7 +21,7 @@ body{
 	
 }
 #content div{
-	background: #3bbced;
+	background: #720245;
 	padding:30px;
 }
 .header{
@@ -50,7 +50,7 @@ input{
 	width:200px;
 }
 button{
-    background-color: #4CAF50; /* Green */
+    background-color: #ad9c3a;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -62,8 +62,9 @@ button{
     border: 2px solid #fff; 
 }
 button:hover {
-    background-color: #444; /* Green */
+    background-color: #f7dc45;
     color: white;
+    cursor: pointer;
 }
 button:active { 
     background-color: #4CAF50;
@@ -75,7 +76,7 @@ button:active {
 	<div id="content"> 
 		<div class="header">Quiz Zone</div>
 		<div class="form">
-			<form id="inputs">
+			<form id="inputs" action="../includes/LoginHandler.php" method="Post">
 				<div id="emailid">
 					<label>Email-id:  </label>
 					<input type="email" name="email"><br>

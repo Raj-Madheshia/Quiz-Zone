@@ -15,26 +15,23 @@ body{
     /*grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-columns: 1fr 1fr 1fr ;*/
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,minmax(175px,auto));
+    grid-template-rows: repeat(4,minmax(200px,auto));
     margin:0 auto;
-
-
 }
 #content div{
-    background: #3bbced;
-    padding:30px;
+    background: #720245;
+    padding:60px;
 }
 .main{
     grid-column: 2 / 3;
-    grid-row:2 / 3;
+    grid-row:2 / 4;
     border-radius: 10px;
 }
 label{
     font-size:30px;
-
 }
 button{
-    background-color: #4CAF50; /* Green */
+    background-color: #ad9c3a; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -47,8 +44,9 @@ button{
     margin:30px;
 }
 button:hover {
-    background-color: #444; /* Green */
+    background-color: #f7dc45; /* Green */
     color: white;
+    cursor: pointer;
 }
 button:active { 
     background-color: #4CAF50;
@@ -60,13 +58,14 @@ button:active {
         <div class="main">
             <label>Login</label>
             <hr>
+            <form action="../includes/LoginType.php">
             <section id="button">
-                <button >Login as Teacher</button>
+                <button value="Teacher" name="btn">Login as Teacher</button>
             </section>
             <section id="button">
-                <button >Login as Student</button>
+                <button value="Student" name="btn">Login as Student</button>
             </section> 
-            
+            </form>
             
         </div>
     </div>
