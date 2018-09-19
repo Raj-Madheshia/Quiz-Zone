@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
     <title>Quiz Zone (Teacher page)</title>
     <style>
-
         body {
             padding-left: 70px;
             padding-right: 70px;
-            
+
         }
 
         header {
@@ -44,10 +43,27 @@
             width: 100%;
             height: 30px;
         }
-        #classname, #subject{
-            width:100px;
+
+        #classname,
+        #subject {
+            width: 150px;
             height: 35px;
-            font-size: 20px
+            font-size: 18px
+        }
+
+        #date,
+        #time {
+            width: 150px;
+            height: 30px;
+            size: 40px;
+            font-size: 18px;
+            float: right
+        }
+
+        #start-quiz {
+            position: absolute;
+            top:50%;
+            
         }
     </style>
 </head>
@@ -64,26 +80,140 @@
     <div>
         <section>
             <header>
-                <select id="classname">
+                <select id="classname" name="class">
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
                     <option value="mercedes">Mercedes</option>
                     <option value="audi">Audi</option>
                 </select>
-                <select id="subject">
+                <select id="subject" name="subject">
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
                     <option value="mercedes">Mercedes</option>
                     <option value="audi">Audi</option>
                 </select>
-                
+                <input id="time" type="time" name="usr_time">
+                <input id="date" type="date" name="bday">
+
             </header>
+            <button id="create-quiz">Create QUiz</button>
         </section>
         <aside>
-                <div id="history" >
-                    <h2>History1</h2>
-                </div>
+            <div id="history">
+                <h2>History1</h2>
+            </div>
         </aside>
+    </div>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Zone (Teacher page)</title>
+    <style>
+        body{
+            color:#fff;
+            font-style: Arial;    
+            margin: 1px;  
+         }
+         #content{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(8,minmax(30px,auto))
+            margin:0 auto;
+            grid-row-gap: 1px;
+            grid-column-gap: 2px;
+
+         }
+         #content header{
+            padding:5px;
+            background-color: #3bbced;
+            grid-column: 1 / 4;
+         }
+         #content section{
+            padding:30px;
+            background-color: #3bbced;
+            grid-column: 1 / 3;
+            display: flex;
+            justify-content: space-around;
+         }
+         #content aside{
+            padding:30px;
+            background-color: #3bbced;
+            grid-column:  3 / 4;
+            grid-row: 2 / 9;
+         }
+         #content div{
+            padding:30px;
+            background-color: #3bbced;
+            grid-column: 1/3;
+            grid-row: 3 / 9;
+         }  
+         label{
+            float:left;
+            font-size: 20px;
+            font-weight: bold;
+         }
+         header > button {
+            float:right;
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 8px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 20px;
+            border: 2px solid #fff; 
+            width:180px;
+         }
+        button:hover {
+            background-color: #444; /* Green */
+            color: white;
+        }
+        button:active { 
+            background-color: #4CAF50;
+        }
+         section > select ,section > input {
+            padding: 8px 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 20px;
+            border: 2px solid #fff; 
+            width:180px;
+         }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <header > 
+            <label>Name:- ................................. </label>
+            <button >Change Password</button>
+            <button>Logout</button>
+        </header>
+        <section>
+            <select id="classname" name="class" label="hello">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <select id="subject" name="subject">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <input id="time" type="time" name="usr_time">
+            <input id="date" type="date" name="bday">
+        </section>
+        <aside>de</aside>
+        <div></div>
     </div>
 </body>
 
